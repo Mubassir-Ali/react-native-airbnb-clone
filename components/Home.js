@@ -41,9 +41,7 @@ export function Home() {
 			</View>
 		
 			<CardWithHeader/>
-			<View>
-				<Text>---</Text>
-			</View>
+		
 		</ScrollView>
 	);
 }

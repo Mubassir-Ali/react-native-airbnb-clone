@@ -23,7 +23,7 @@ export function CardWithHeader() {
         <Text style={styles.textDescreption}>
           Earn extra income and unlock new opportunities by sharing your space.
         </Text>
-        <Pressable style={styles.learMoreButton}><Text>Learn more</Text></Pressable>
+        <Pressable style={styles.learMoreButton}><Text style={styles.learMoreText}>Learn more</Text></Pressable>
       </View>
       <Image
         style={styles.image}
@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
   title: {
     color: "#fff",
     fontSize: 20,
+   
   },
   textDescreption: {
     color: "#ddd",
@@ -67,9 +68,13 @@ const styles = StyleSheet.create({
   },
   learMoreButton:{
       backgroundColor:'#fff',     
-      padding:10,
-      
+      padding:10,      
       borderRadius:5,
-      marginTop:10
+      marginTop:10,
+      
+  },
+  learMoreText:{
+      fontWeight:'bold',
+      color:'#333'
   }
 });
