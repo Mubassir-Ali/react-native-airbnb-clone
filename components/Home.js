@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Image, Dimensions, TextInput, Pressable, Scroll
 import { Feather } from '@expo/vector-icons';
 import data, { imageData } from '../assets/Airbnb_images';
 import { Card } from './Card';
+import {CardWithHeader} from './CardWithHeader'
 
 const { width, height } = Dimensions.get('screen');
 const IMAGE_WIDTH = width;
@@ -38,6 +39,11 @@ export function Home() {
 					style={styles.cardContainer}
 				/>
 			</View>
+		
+			<CardWithHeader/>
+			<View>
+				<Text>---</Text>
+			</View>
 		</ScrollView>
 	);
 }
@@ -45,7 +51,9 @@ export function Home() {
 const styles = StyleSheet.create({
 	content: {
 		flex: 1,
-		top: 40
+		paddingTop:40,
+
+		
 	},
 	homeContainer: {
 		alignItems: 'center',
